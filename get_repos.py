@@ -17,5 +17,3 @@ def get_repos():
     res = requests.get(url, headers=headers)
     repos = res.json()
     return repos
-
-print(get_repos())
