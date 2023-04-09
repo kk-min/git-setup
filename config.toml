@@ -1,3 +1,2 @@
-[auth]
-token = GITHUB_TOKEN
+token = "GITHUB_TOKEN"
 
