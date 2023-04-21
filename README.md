@@ -1,4 +1,6 @@
 # Git Setup
+_Copyright © 2023 kk-min_
+
 Scripts for setting up git repos on a new machine.
 
 ## Requirements
