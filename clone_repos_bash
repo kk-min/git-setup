@@ -1,4 +1,4 @@
 #!/user/bin/bash
 
 token=$(grep -oP "(?<=\")(.*)(?=\")" config.toml)
-curl -H "Accept: application/vnd.github.v3+json" -H "Authorization: token $token" https://api.github.com/user/repos | jq '.[] | .url' | while read url; do git clone url $1; done
+curl -H "Accept: application/vnd.github.v3+json" -H "Authorization: token $token" https://api.github.com/user/repos | jq '.[] | .url' | while read url; do git clone $url $1; done
